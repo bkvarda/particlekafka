@@ -33,4 +33,13 @@ kafka-console-consumer --zookeeper bkvarda-flume-3.vpc.cloudera.com:2181 --topic
 ```
 You should see events streaming on the python script side, and batching on the kafka consumer side
 
+Exit that
 
+Configure the flume.conf
+```
+
+```
+Start the flume agent
+```
+flume-ng agent --conf conf --conf-file flume.conf --name flume1 -Dflume.root.logger=INFO,console
+```
